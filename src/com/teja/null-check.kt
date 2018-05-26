@@ -8,7 +8,7 @@ package com.teja
 fun parseInt(str: String): Int? {//? is mandatory as we may return null in function call.
     try {
         return java.lang.Integer.parseInt(str)
-    } catch (e: NumberFormatException) {
+    } catch (e: Throwable) {
         return null
     }
 }
